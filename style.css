@@ -45,3 +45,11 @@
     background-color: #b39898;
     color: #000;
 }
+h1{
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+#porcentagem{
+    margin: 5px;
+}
