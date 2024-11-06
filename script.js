@@ -7,29 +7,29 @@ let porcentagem = document.getElementById('porcentagem');
 let chances = 6;
 jogar.addEventListener('click', roletaRussa);
 voltar.addEventListener('click', voltarJogo);
-porcentagem.innerHTML = `Chances: ${(100 / (chances)).toFixed(2)}%`;
+porcentagem.innerHTML = `Chances de morrer: ${(100 / (chances)).toFixed(2)}%`;
 
 function roletaRussa() {
     let sorteio = parseInt(Math.random() * chances);
     if (chances === 6) {
         imagem.src = 'images/sobreviveu.avif';
-        porcentagem.innerHTML = `Chances: ${(100 / (chances-1).toFixed(2))}%`;
+        porcentagem.innerHTML = `Chances de morrer: ${(100 / (chances-1).toFixed(2))}%`;
     };
     if (chances === 5) {
         imagem.src = 'images/sobreviveu2.png';
-        porcentagem.innerHTML = `Chances: ${(100 / (chances-1).toFixed(2))}%`;
+        porcentagem.innerHTML = `Chances de morrer:: ${(100 / (chances-1).toFixed(2))}%`;
     }
     if(chances === 4) {
         imagem.src = 'images/sobreviveu3.webp';
-        porcentagem.innerHTML = `Chances: ${parseInt((100 / (chances-1)))}%`;
+        porcentagem.innerHTML = `Chances de morrer:: ${((100 / (chances-1)).toFixed(2))}%`;
     }
     if(chances === 3) {
         imagem.src = 'images/sobreviveu4.jpg';
-        porcentagem.innerHTML = `Chances: ${(100 / (chances-1).toFixed(2))}%`;
+        porcentagem.innerHTML = `Chances de morrer: ${(100 / (chances-1).toFixed(2))}%`;
     }
     if (chances === 2) {
         imagem.src = 'images/sobreviveu5.jpg';
-        porcentagem.innerHTML = `Chances: ${(100 / (chances-1)).toFixed(2)}%`;
+        porcentagem.innerHTML = `Chances de morrer: ${(100 / (chances-1)).toFixed(2)}%`;
         // jogar.style.display = 'none'; 
     }
     if (sorteio === 0 || chances === 1) {
